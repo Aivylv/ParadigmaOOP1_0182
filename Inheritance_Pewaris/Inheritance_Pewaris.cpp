@@ -35,5 +35,9 @@ public:
 
 int main() 
 {
+	Pelajar siswa1("andi laksono", "SMAN 1Bantul");
+	cout << siswa1.Perkenalan();
+	cout << "Hasil = " << siswa1.jumlah(10, 90) << endl;
 
+	return 0;
 }
