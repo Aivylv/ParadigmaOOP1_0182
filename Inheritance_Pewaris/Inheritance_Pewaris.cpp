@@ -18,7 +18,22 @@ public:
 	}
 };
 
-int main()
+class Pelajar : public Orang {		//Ini menunjukkan bahwa Pelajar mewarisi dari Orang.
+public:
+	string sekolah;
+
+	Pelajar(string pNama, string pSekolah) : Orang(pNama), sekolah(pSekolah) {
+		cout << "Pe;ajar dibuat\n" << endl;
+	}
+	~Pelajar() {
+		cout << "Pelajar dihapus\n" << endl;
+	}
+	string Perkenalan() {
+		return "Halo, nama saya" + nama + "dari sekolah" + sekolah + "\n\n";
+	}
+};
+
+int main() 
 {
 
 }
